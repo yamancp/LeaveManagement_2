@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LeaveManagement_2.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<Employee>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
